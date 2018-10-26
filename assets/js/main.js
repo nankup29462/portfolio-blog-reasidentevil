@@ -40,7 +40,71 @@ $('.to-top').click(function(){
     $('html,body').animate({scrollTop: '0px'}, 800);
 })
 
+// btn blog 
+// block
+function btnClick(number){
+    if(number==1){
+        // All case
+        var x = document.getElementsByClassName("story");
+        var y = document.getElementsByClassName("character");
+        var z = document.getElementsByClassName("monster");
+        var i;
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "block";
+        }
+        for (i = 0; i < y.length; i++) {
+            y[i].style.display = "block";
+        }
+        for (i = 0; i < z.length; i++) {
+            z[i].style.display = "block";
+        }
 
-
+    }else if(number==2){
+        // story(x) case
+        var x = document.getElementsByClassName("story");
+        var y = document.getElementsByClassName("character");
+        var z = document.getElementsByClassName("monster");
+        var i;
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "block";
+        }
+        for (i = 0; i < y.length; i++) {
+            y[i].style.display = "none";
+        }
+        for (i = 0; i < z.length; i++) {
+            z[i].style.display = "none";
+        }
+    }else if(number==3){
+        // character case
+        var x = document.getElementsByClassName("story");
+        var y = document.getElementsByClassName("character");
+        var z = document.getElementsByClassName("monster");
+        var i;
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        for (i = 0; i < y.length; i++) {
+            y[i].style.display = "block";
+        }
+        for (i = 0; i < z.length; i++) {
+            z[i].style.display = "none";
+        }
+    }else if(number==4){
+        // monster case
+        var x = document.getElementsByClassName("story");
+        var y = document.getElementsByClassName("character");
+        var z = document.getElementsByClassName("monster");
+        var i;
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        for (i = 0; i < y.length; i++) {
+            y[i].style.display = "none";
+        }
+        for (i = 0; i < z.length; i++) {
+            z[i].style.display = "block";
+        }
+    }
+}
 
 
