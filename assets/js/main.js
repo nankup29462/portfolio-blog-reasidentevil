@@ -106,5 +106,46 @@ function btnClick(number){
         }
     }
 }
+// avtive
+function btnActive(number){
+    if(number==1){
+        var statusAll = document.getElementById("btn1");
+        statusAll.classList.add("active");
+        var statusStory = document.getElementById("btn2");
+        statusStory.classList.remove("active");
+        var statusCharacter = document.getElementById("btn3");
+        statusCharacter.classList.remove("active");
+        var statusMonster = document.getElementById("btn4");
+        statusMonster.classList.remove("active");
+    }else if(number==2){
+        var statusAll = document.getElementById("btn1");
+        statusAll.classList.remove("active");
+        var statusStory = document.getElementById("btn2");
+        statusStory.classList.add("active");
+        var statusCharacter = document.getElementById("btn3");
+        statusCharacter.classList.remove("active");
+        var statusMonster = document.getElementById("btn4");
+        statusMonster.classList.remove("active");
+    }else if(number==3){
+        var statusAll = document.getElementById("btn1");
+        statusAll.classList.remove("active");
+        var statusStory = document.getElementById("btn2");
+        statusStory.classList.remove("active");
+        var statusCharacter = document.getElementById("btn3");
+        statusCharacter.classList.add("active");
+        var statusMonster = document.getElementById("btn4");
+        statusMonster.classList.remove("active");
+    }else if(number==4){
+        var statusAll = document.getElementById("btn1");
+        statusAll.classList.remove("active");
+        var statusStory = document.getElementById("btn2");
+        statusStory.classList.remove("active");
+        var statusCharacter = document.getElementById("btn3");
+        statusCharacter.classList.remove("active");
+        var statusMonster = document.getElementById("btn4");
+        statusMonster.classList.active("active");
+    }
+
+}
 
 
