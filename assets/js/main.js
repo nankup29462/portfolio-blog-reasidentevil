@@ -143,7 +143,7 @@ function btnActive(number){
         var statusCharacter = document.getElementById("btn3");
         statusCharacter.classList.remove("active");
         var statusMonster = document.getElementById("btn4");
-        statusMonster.classList.active("active");
+        statusMonster.classList.add("active");
     }
 
 }
